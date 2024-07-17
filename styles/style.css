@@ -234,7 +234,7 @@ button {
 }
 
 .preloader-template {
-  position: absolute;
+  position: relative;
 }
 
 /* Добавление базового стиля */
