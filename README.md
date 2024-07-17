@@ -1,1 +1,1 @@
-https://github.com/NooMiSecond/posmotri_v_okno-1.git
+https://github.com/NooMiSecond/posmotri_v_okno.git
