@@ -41,7 +41,7 @@ button {
   cursor: pointer;
 }
 
-/* Стили для страницы  */
+/* Стили для страницы */
 .page {
   display: flex;
   flex-direction: column;
@@ -54,7 +54,7 @@ button {
 
 /* Основной контент */
 .content {
-  max-width: 1140px;
+  width: 1140px;
   inline-size: auto;
   display: flex;
   justify-content: space-between;
@@ -64,7 +64,7 @@ button {
 }
 
 .result {
-  width: 62.37%;
+  width: 711px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -72,14 +72,14 @@ button {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
+  width: 708px;
+  height: 387px;
+  display: flex;
 }
 
 .result__video {
   width: 100%;
   object-fit: cover;
-  /* height: 368px; */
 }
 
 /* Форма поиска */
@@ -87,6 +87,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 1px;
 }
 
 .search-form__fieldset {
@@ -110,6 +111,7 @@ button {
   gap: 5px;
   cursor: pointer;
   user-select: none;
+  margin-bottom: 1px;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -179,7 +181,7 @@ button {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 .button {
@@ -213,8 +215,7 @@ button {
 
 /* Правый блок */
 .content__details {
-  width: 35%;
-  /* height: 534px; */
+  width: 399px;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -237,10 +238,10 @@ button {
   position: relative;
   width: 100%;
   height: 298px;
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   padding: 2px;
 }
 
@@ -282,6 +283,11 @@ button {
 
 .content__list-item {
   padding: 1px;
+  margin-bottom: 29px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 0;
 }
 
 .content__list-item:active {
@@ -295,9 +301,8 @@ button {
   line-height: 100%;
   text-transform: uppercase;
   color: var(--main-color);
-  /* margin-top: 1px; */
   line-height: 1.2;
-  margin-bottom: 6px;
+  margin-bottom: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -309,7 +314,6 @@ button {
   font-size: 18px;
   line-height: 90%;
   color: var(--main-color);
-  width: 200px;
 }
 
 .content__video-card-thumbnail {
@@ -317,7 +321,6 @@ button {
   block-size: 103px;
   object-fit: cover;
   object-position: center;
-
 }
 
 .more-button {
